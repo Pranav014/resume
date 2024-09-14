@@ -1,0 +1,74 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 HelveticaNeue;\f2\froman\fcharset0 Times-Roman;
+}
+{\colortbl;\red255\green255\blue255;\red173\green174\blue176;\red21\green23\blue26;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c73333\c73725\c74510;\cssrgb\c10588\c12157\c13725;\cssrgb\c0\c0\c0;
+}
+\margl1440\margr1440\vieww28600\viewh17980\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs66 \cf0 ========\
+ Interview Prep\
+\
+
+\fs60 ### **What is the Spring Framework?**\
+\
+The **Spring Framework** is a comprehensive, open-source Java platform that provides infrastructure support for developing Java applications. It is one of the most widely used frameworks in Java and offers a range of features for enterprise-level application development. Spring is designed to make Java programming easier and more efficient by handling many of the common complexities associated with enterprise application development, such as:\
+\
+1. **Dependency Injection (DI)** - Simplifies object creation and management.\
+2. **Aspect-Oriented Programming (AOP)** - Adds additional behavior to existing code dynamically.\
+3. **Data Access** - Provides tools to interact with databases (via JDBC, ORM support like Hibernate).\
+4. **Transaction Management** - Simplifies transactional operations across the application.\
+5. **Model-View-Controller (MVC) Framework** - Helps build web applications.\
+6. **Security** - Offers robust security features for authentication and authorization (via Spring Security).\
+\
+\
+### Summary\
+The Spring Framework is popular because it simplifies complex enterprise application development, supports modular design, has a large ecosystem, integrates well with other technologies, and enjoys strong community support. Its flexibility, especially with the introduction of Spring Boot, makes it ideal for both small and large-scale projects.\
+\
+\
+\
+IoC Container\
+
+\f1\fs54 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 The\'a0
+\f2\fs42\fsmilli21400 \cb1 org.springframework.beans
+\f1\fs54 \cb3 \'a0and\'a0
+\f2\fs42\fsmilli21400 \cb1 org.springframework.context
+\f1\fs54 \cb3 \'a0packages are the basis for Spring Framework\'92s IoC container. The\'a0{\field{\*\fldinst{HYPERLINK "https://docs.spring.io/spring-framework/docs/6.1.12/javadoc-api/org/springframework/beans/factory/BeanFactory.html"}}{\fldrslt 
+\fs52\fsmilli26150 \cf0 \strokec4 BeanFactory}}\'a0interface provides an advanced configuration mechanism capable of managing any type of object.\'a0{\field{\*\fldinst{HYPERLINK "https://docs.spring.io/spring-framework/docs/6.1.12/javadoc-api/org/springframework/context/ApplicationContext.html"}}{\fldrslt 
+\fs52\fsmilli26150 \cf0 \strokec4 ApplicationContext}}\'a0is a sub-interface of\'a0
+\f2\fs42\fsmilli21400 \cb1 BeanFactory
+\f1\fs54 \cb3 . It adds:\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs50 \cf2 \cb3 \strokec2 In short, the\'a0
+\f2\fs38\fsmilli19400 \cb1 BeanFactory
+\f1\fs50 \cb3 \'a0provides the configuration framework and basic functionality, and the\'a0
+\f2\fs38\fsmilli19400 \cb1 ApplicationContext
+\f1\fs50 \cb3 \'a0adds more enterprise-specific functionality. The\'a0
+\f2\fs38\fsmilli19400 \cb1 ApplicationContext
+\f1\fs50 \cb3 \'a0is a complete superset of the\'a0
+\f2\fs38\fsmilli19400 \cb1 BeanFactory
+\f1\fs50 \cb3 \'a0and is used exclusively in this chapter in descriptions of Spring\'92s IoC container. For more information on using the\'a0
+\f2\fs38\fsmilli19400 \cb1 BeanFactory
+\f1\fs50 \cb3 \'a0instead of the\'a0
+\f2\fs38\fsmilli19400 \cb1 ApplicationContext,
+\f1\fs50 \cb3 \'a0see the section covering the\'a0{\field{\*\fldinst{HYPERLINK "https://docs.spring.io/spring-framework/reference/core/beans/beanfactory.html"}}{\fldrslt 
+\fs48\fsmilli24150 \cf0 \strokec4 BeanFactory
+\fs50 \'a0API}}.\
+\
+
+\fs52 In Spring, the objects that form the backbone of your application and that are managed by the Spring IoC container are called beans. A bean is an object that is instantiated, assembled, and managed by a Spring IoC container. Otherwise, a bean is simply one of many objects in your application. Beans, and the dependencies among them, are reflected in the configuration metadata used by a container.
+\fs50 \
+
+\fs54 \cf2 \cb3 \strokec2 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs80 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 Application Context interface represents Spring IoC Container and is responsible for instantiating, configuring and assembling the beans.\
+The container gets its instructions on configuring, intatniation and assembling by reading configuration metadata.\
+This metadata can be annotated component classes, configuration classes with factory \
+\
+}
